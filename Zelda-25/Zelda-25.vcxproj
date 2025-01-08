@@ -37,6 +37,7 @@
     <ClInclude Include="include\IDs.h" />
     <ClInclude Include="include\Player.h" />
     <ClInclude Include="include\Principal.h" />
+    <ClInclude Include="list.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

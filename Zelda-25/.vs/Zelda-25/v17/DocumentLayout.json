@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\jvcab\\OneDrive\\Documentos\\GitHub\\JogoSimao\\Zelda-25\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9AC1ED2B-38FD-451C-AB6B-7FAD4E642B5A}|Zelda-25.vcxproj|C:\\Users\\jvcab\\OneDrive\\Documentos\\GitHub\\JogoSimao\\Zelda-25\\Zelda.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9AC1ED2B-38FD-451C-AB6B-7FAD4E642B5A}|Zelda-25.vcxproj|solutionrelative:Zelda.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9AC1ED2B-38FD-451C-AB6B-7FAD4E642B5A}|Zelda-25.vcxproj|C:\\Users\\jvcab\\OneDrive\\Documentos\\GitHub\\JogoSimao\\Zelda-25\\src\\Entity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9AC1ED2B-38FD-451C-AB6B-7FAD4E642B5A}|Zelda-25.vcxproj|solutionrelative:src\\Entity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AC1ED2B-38FD-451C-AB6B-7FAD4E642B5A}|Zelda-25.vcxproj|C:\\Users\\jvcab\\OneDrive\\Documentos\\GitHub\\JogoSimao\\Zelda-25\\src\\Ente.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9AC1ED2B-38FD-451C-AB6B-7FAD4E642B5A}|Zelda-25.vcxproj|solutionrelative:src\\Ente.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AC1ED2B-38FD-451C-AB6B-7FAD4E642B5A}|Zelda-25.vcxproj|C:\\Users\\jvcab\\OneDrive\\Documentos\\GitHub\\JogoSimao\\Zelda-25\\include\\Ente.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9AC1ED2B-38FD-451C-AB6B-7FAD4E642B5A}|Zelda-25.vcxproj|solutionrelative:include\\Ente.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AC1ED2B-38FD-451C-AB6B-7FAD4E642B5A}|Zelda-25.vcxproj|C:\\Users\\jvcab\\OneDrive\\Documentos\\GitHub\\JogoSimao\\Zelda-25\\include\\Entity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9AC1ED2B-38FD-451C-AB6B-7FAD4E642B5A}|Zelda-25.vcxproj|solutionrelative:include\\Entity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AC1ED2B-38FD-451C-AB6B-7FAD4E642B5A}|Zelda-25.vcxproj|C:\\Users\\jvcab\\OneDrive\\Documentos\\GitHub\\JogoSimao\\Zelda-25\\list.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9AC1ED2B-38FD-451C-AB6B-7FAD4E642B5A}|Zelda-25.vcxproj|solutionrelative:list.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AC1ED2B-38FD-451C-AB6B-7FAD4E642B5A}|Zelda-25.vcxproj|C:\\Users\\jvcab\\OneDrive\\Documentos\\GitHub\\JogoSimao\\Zelda-25\\Zelda.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9AC1ED2B-38FD-451C-AB6B-7FAD4E642B5A}|Zelda-25.vcxproj|solutionrelative:Zelda.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,7 +42,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "Entity.h",
+              "DocumentMoniker": "C:\\Users\\jvcab\\OneDrive\\Documentos\\GitHub\\JogoSimao\\Zelda-25\\include\\Entity.h",
+              "RelativeDocumentMoniker": "include\\Entity.h",
+              "ToolTip": "C:\\Users\\jvcab\\OneDrive\\Documentos\\GitHub\\JogoSimao\\Zelda-25\\include\\Entity.h",
+              "RelativeToolTip": "include\\Entity.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-08T19:03:57.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Ente.h",
+              "DocumentMoniker": "C:\\Users\\jvcab\\OneDrive\\Documentos\\GitHub\\JogoSimao\\Zelda-25\\include\\Ente.h",
+              "RelativeDocumentMoniker": "include\\Ente.h",
+              "ToolTip": "C:\\Users\\jvcab\\OneDrive\\Documentos\\GitHub\\JogoSimao\\Zelda-25\\include\\Ente.h",
+              "RelativeToolTip": "include\\Ente.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-08T19:01:36.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Ente.cpp",
+              "DocumentMoniker": "C:\\Users\\jvcab\\OneDrive\\Documentos\\GitHub\\JogoSimao\\Zelda-25\\src\\Ente.cpp",
+              "RelativeDocumentMoniker": "src\\Ente.cpp",
+              "ToolTip": "C:\\Users\\jvcab\\OneDrive\\Documentos\\GitHub\\JogoSimao\\Zelda-25\\src\\Ente.cpp",
+              "RelativeToolTip": "src\\Ente.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-08T19:01:29.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "list.h",
+              "DocumentMoniker": "C:\\Users\\jvcab\\OneDrive\\Documentos\\GitHub\\JogoSimao\\Zelda-25\\list.h",
+              "RelativeDocumentMoniker": "list.h",
+              "ToolTip": "C:\\Users\\jvcab\\OneDrive\\Documentos\\GitHub\\JogoSimao\\Zelda-25\\list.h",
+              "RelativeToolTip": "list.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-08T18:58:21.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Zelda.cpp",
               "DocumentMoniker": "C:\\Users\\jvcab\\OneDrive\\Documentos\\GitHub\\JogoSimao\\Zelda-25\\Zelda.cpp",
               "RelativeDocumentMoniker": "Zelda.cpp",
@@ -34,18 +102,17 @@
               "RelativeToolTip": "Zelda.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-08T13:40:37.105Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-08T13:40:37.105Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Entity.cpp",
               "DocumentMoniker": "C:\\Users\\jvcab\\OneDrive\\Documentos\\GitHub\\JogoSimao\\Zelda-25\\src\\Entity.cpp",
               "RelativeDocumentMoniker": "src\\Entity.cpp",
               "ToolTip": "C:\\Users\\jvcab\\OneDrive\\Documentos\\GitHub\\JogoSimao\\Zelda-25\\src\\Entity.cpp",
               "RelativeToolTip": "src\\Entity.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAABcAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-01-08T13:37:17.791Z",
               "EditorCaption": ""

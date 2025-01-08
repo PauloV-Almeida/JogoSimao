@@ -74,5 +74,8 @@
     <ClInclude Include="include\Enemy.h">
       <Filter>Arquivos de Cabeçalho\Entity\character</Filter>
     </ClInclude>
+    <ClInclude Include="list.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
