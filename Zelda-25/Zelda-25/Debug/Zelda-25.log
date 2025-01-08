@@ -1,4 +1,6 @@
 ﻿  Zelda.cpp
+  Enemy.cpp
+C:\Users\Paulo Victor\Documents\github\JogoSimao\Zelda-25\src\Enemy.cpp(12,13): warning C4244: 'argumento': conversão de 'time_t' para 'unsigned int', possível perda de dados
   Principal.cpp
   Gerando Código...
   Zelda-25.vcxproj -> C:\Users\Paulo Victor\Documents\github\JogoSimao\Zelda-25\Debug\Zelda-25.exe
