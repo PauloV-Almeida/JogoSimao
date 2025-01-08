@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\SFML-2.6.2\\examples",
+    "\\SFML-2.6.2\\examples\\ftp",
+    "\\Zelda-25",
+    "\\Zelda-25\\include"
   ],
+  "SelectedNode": "\\Zelda-25\\include\\Enemy.h",
   "PreviewInSolutionExplorer": false
 }
