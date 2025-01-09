@@ -2,12 +2,14 @@
 
 namespace Entidades
 {
-	Player::Player(const sf::Vector2f pos, sf::Vector2f tam) :
-		body(sf::RectangleShape(tam))
+	Player::Player(const sf::Vector2f pos,const sf::Vector2f tam) :
+		Character(pos, tam)
 	{
 		body.setPosition(pos);
+		std::cout << "Player move" << std::endl;
 		body.setFillColor(sf::Color::Green);
-		run();
+		//run();
+		speed = sf::Vector2f(1.f, 1.f);
 	}
 	Player::Player(sf::RectangleShape body) :
 		body(sf::RectangleShape(body))
@@ -28,12 +30,13 @@ namespace Entidades
 		speed = sf::Vector2f(1.f, 1.f);
 	}
 
-	const sf::RectangleShape& Player::getBody()
+	const sf::RectangleShape Player::getBody()
 	{
 		return body;
 	}
 	void Player::move()
 	{
+		
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))
 		{
 			body.move(0.f, -speed.y);

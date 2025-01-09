@@ -2,7 +2,7 @@
 
 namespace Entidades
 {
-	Character::Character(const sf::Vector2f pos, sf::Vector2f tam) :
+	Character::Character(const sf::Vector2f pos,const sf::Vector2f tam) :
 		body(sf::RectangleShape(tam))
 	{
 		body.setPosition(pos);

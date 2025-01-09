@@ -10,11 +10,11 @@ namespace Entidades {
 		sf::Vector2f speed;
 		void run();
 	public:
-		Player(const sf::Vector2f pos, sf::Vector2f tam);
+		Player(const sf::Vector2f pos,const sf::Vector2f tam);
 		Player(sf::RectangleShape body);
 		Player();
 		~Player();
-		const sf::RectangleShape& getBody();
+		const sf::RectangleShape getBody();
 		void move();
 	};
 }

@@ -3,8 +3,8 @@
 
 //atualizar o fabs
 #include <math.h>
-#define SPEED_ENEMY_X 0.025f
-#define SPEED_ENEMY_Y 0.025f
+#define SPEED_ENEMY_X 0.f
+#define SPEED_ENEMY_Y 0.f
 
 #define PURSUIT_RADIUS_X 200.f
 #define PURSUIT_RADIUS_Y 200.f
