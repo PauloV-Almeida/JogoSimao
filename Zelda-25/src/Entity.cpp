@@ -1,61 +1,65 @@
-#include "../include/Ente.h"
-#include "../include/list.h"
-#include "../include/Graphical_Manager.h"
+#include "../include/Entity.h"
 
-Manager::Graphical_Manager* Ente::pGM = Manager::Graphical_Manager::getInstance();
+namespace Entities {
 
-Ente::Ente() {
-}
+    const float GRAVITY_VALUE = 10.0f; // Definindo o valor da gravidade
 
-Ente::~Ente() {
-}
-
-// Implementação de uma classe derivada de Ente para exemplificar
-class Entity : public Ente {
-private:
-    int id;
-    std::string name;
-public:
-    Entity(int id, const std::string& name) : id(id), name(name) {}
-    ~Entity() {}
-
-    void run() override {
-        // Exemplo de uso do Graphical_Manager
-        sf::RectangleShape shape(sf::Vector2f(100.f, 100.f));
-        shape.setFillColor(sf::Color::Green);
-        pGM->draw(shape);
-        pGM->show();
+    Entity::Entity() : gravity(0.0f, GRAVITY_VALUE), onGround(false), buffer(nullptr), id(IDs::IDs::vazio) {
+        pSprite = new sf::Sprite();
+        pTexture = new sf::Texture();
+        setTarget();
     }
 
-    int getId() const {
-        return id;
+    Entity::~Entity() {
+        delete pSprite;
+        delete pTexture;
     }
 
-    void setId(int id) {
-        this->id = id;
+    void Entity::setVelocity(sf::Vector2f newVelocity) {
+        velocity = newVelocity;
     }
 
-    std::string getName() const {
-        return name;
+    void Entity::setVelocityX(float velX) {
+        velocity.x = velX;
     }
 
-    void setName(const std::string& name) {
-        this->name = name;
-    }
-};
-
-// Exemplo de uso da lista com a classe Entity
-void exampleUsage() {
-    Lists::List<Entity> entityList;
-    Entity* entity1 = new Entity(1, "Entity1");
-    Entity* entity2 = new Entity(2, "Entity2");
-
-    entityList.push(entity1);
-    entityList.push(entity2);
-
-    for (auto it = entityList.get_first(); it != nullptr; ++it) {
-        (*it)->run();
+    void Entity::setVelocityY(float velY) {
+        velocity.y = velY;
     }
 
-    entityList.clear();
-}
+    void Entity::setPosition(sf::Vector2f newPosition) {
+        position = newPosition;
+        pSprite->setPosition(position);
+    }
+
+    void Entity::setOnGround(bool onGround) {
+        this->onGround = onGround;
+    }
+
+    sf::Vector2f Entity::getVelocity() const {
+        return velocity;
+    }
+
+    sf::Vector2f Entity::getPosition() const {
+        return position;
+    }
+
+    bool Entity::isOnGround() const {
+        return onGround;
+    }
+
+    sf::Vector2f Entity::getSize() const {
+        return size;
+    }
+
+    void Entity::fall() {
+        if (!onGround) {
+            velocity.y += gravity.y;
+        }
+    }
+
+    void Entity::execute() {
+        // Implementação do método execute
+    }
+
+} // namespace Entities

@@ -2,29 +2,47 @@
 #define ENTITY_H
 
 #include "Ente.h"
-#include <string>
+#include "IDs.h"
+#include <SFML/Graphics/Drawable.hpp>
+#include <SFML/Graphics/RectangleShape.hpp>
+#include <SFML/Graphics/Texture.hpp>
+#include <SFML/System/Vector2.hpp>
 
-class Entity : public Ente {
-private:
-    int id;
-    std::string name;
+namespace Entities {
 
-public:
-    // Construtor com parâmetros
-    Entity(int id = 0, const std::string& name = "Unnamed");
+    const float gravity = 5.0f;
 
-    // Destrutor
-    ~Entity();
+    class Entity : public Ente {
+    private:
+        sf::Vector2f position;
+        const sf::Vector2f gravity;
+        sf::Vector2f size;
+        bool onGround;
+        std::ostream* buffer;
+        IDs::IDs id; // Adding ID from IDs.h
 
-    // Método run sobrescrito
-    void run() override;
+    protected:
+        sf::Vector2f velocity;
 
-    // Getters e Setters
-    int getId() const;
-    void setId(int id);
+    public:
+        Entity();
+        virtual ~Entity();
 
-    std::string getName() const;
-    void setName(const std::string& name);
-};
+        void setVelocity(sf::Vector2f newVelocity);
+        void setVelocityX(float velX);
+        void setVelocityY(float velY);
+        void setPosition(sf::Vector2f newPosition);
+        void setOnGround(bool onGround);
 
-#endif
+        sf::Vector2f getVelocity() const;
+        sf::Vector2f getPosition() const;
+        bool isOnGround() const;
+        sf::Vector2f getSize() const;
+
+        void fall();
+        virtual void execute() override; // Garantindo que execute seja substituído
+    };
+
+} // namespace Entities
+
+#endif // ENTITY_H

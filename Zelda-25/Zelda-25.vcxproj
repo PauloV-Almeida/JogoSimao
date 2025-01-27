@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Input_Manager.h" />
     <ClCompile Include="src\Charecter.cpp" />
     <ClCompile Include="src\Enemy.cpp" />
     <ClCompile Include="src\Ente.cpp" />
@@ -29,14 +30,17 @@
     <ClCompile Include="Zelda.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="EntityList.h" />
     <ClInclude Include="include\Character.h" />
     <ClInclude Include="include\Enemy.h" />
     <ClInclude Include="include\Ente.h" />
     <ClInclude Include="include\Entity.h" />
     <ClInclude Include="include\Graphical_Manager.h" />
     <ClInclude Include="include\IDs.h" />
+    <ClInclude Include="include\Observer.h" />
     <ClInclude Include="include\Player.h" />
     <ClInclude Include="include\Principal.h" />
+    <ClInclude Include="include\Subject.h" />
     <ClInclude Include="list.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
