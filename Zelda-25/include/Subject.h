@@ -1,25 +1,23 @@
 #pragma once
 
-#include <list>
-#include "Graphical_Manager.h"
+#include <SFML/Window/Keyboard.hpp>
+#include <set>
 
-namespace Observers
-{
-	class Observer;
-}
+class Observer;
 
-namespace Manager
-{
-	class Subject
-	{
-	protected:
-		std::list<Observers::Observer*> list_observers;
-		std::list<Observers::Observer*>::iterator it;
-	public:
-		Subject();
-		virtual ~Subject();
-		void detach(Observers::Observer* pObserver);
-		void attach(Observers::Observer* pObserver);
-		void notify(sf::Keyboard::Key key_code);
-	};
-}
+class Subject {
+public:
+	std::set<Observer*>* observadores;
+
+public:
+	virtual ~Subject();
+
+	virtual void inscrever(Observer* o);
+	virtual void desinscrever(Observer* o);
+
+	virtual void notificarTeclaPressionada(sf::Keyboard::Key tecla);
+	virtual void notificarTeclaSolta(sf::Keyboard::Key tecla);
+
+protected:
+	Subject();
+};

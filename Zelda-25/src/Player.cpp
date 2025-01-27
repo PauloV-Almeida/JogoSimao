@@ -6,20 +6,11 @@ namespace Entidades
 		Character(pos, tam)
 	{
 		body.setPosition(pos);
-		std::cout << "Player move" << std::endl;
 		body.setFillColor(sf::Color::Green);
-		//run();
-		speed = sf::Vector2f(1.f, 1.f);
-	}
-	Player::Player(sf::RectangleShape body) :
-		body(sf::RectangleShape(body))
-	{
 		run();
 	}
-	Player::Player() :
-		body(sf::RectangleShape())
+	Player::Player()
 	{
-		run();
 	}
 	Player::~Player()
 	{
