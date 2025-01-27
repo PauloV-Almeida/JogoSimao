@@ -22,6 +22,9 @@
     <Filter Include="Arquivos de Cabeçalho\Entity\character">
       <UniqueIdentifier>{ebbc0d13-d598-4d3e-bdee-79173961d905}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Arquivos de Cabeçalho\observer">
+      <UniqueIdentifier>{50079556-88dc-476b-96ea-3cdfd7cc6701}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Ente.cpp">
@@ -48,6 +51,9 @@
     <ClCompile Include="src\Enemy.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
+    <ClCompile Include="Input_Manager.h">
+      <Filter>Arquivos de Cabeçalho\Manager</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Ente.h">
@@ -73,6 +79,18 @@
     </ClInclude>
     <ClInclude Include="include\Enemy.h">
       <Filter>Arquivos de Cabeçalho\Entity\character</Filter>
+    </ClInclude>
+    <ClInclude Include="list.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityList.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Observer.h">
+      <Filter>Arquivos de Cabeçalho\observer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Subject.h">
+      <Filter>Arquivos de Cabeçalho\observer</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

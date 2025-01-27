@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Zelda-25",
+    "\\Zelda-25\\include",
+    "\\Zelda-25\\src"
   ],
+  "SelectedNode": "\\Zelda-25\\src\\Ente.cpp",
   "PreviewInSolutionExplorer": false
 }
