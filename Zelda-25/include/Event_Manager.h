@@ -6,19 +6,19 @@
 #include <SFML/Window/Event.hpp>
 #include <SFML/Window/Window.hpp>
 
-namespace Entities::Characters {
+namespace Entidades {
     class Player;
 
 } // namespace Characters
 
-namespace Managers {
+namespace Manager {
 
     class EventManager {
     private:
         static EventManager* instance;
 
         sf::Window* pWindow;
-        GraphicManager* pGM;
+        Graphical_Manager* pGM;
         InputManager* pIM;
 
     private:
@@ -30,7 +30,7 @@ namespace Managers {
     public:
         static EventManager* getInstance();
 
-        void setGM(GraphicManager* pGM);
+        void setGM(Graphical_Manager* pGM);
         void setIM(InputManager* pIM);
         void processEvents();
     };
@@ -38,4 +38,3 @@ namespace Managers {
 }
 
 #endif // EVENT_MANAGER_H
-

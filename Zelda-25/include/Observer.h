@@ -8,7 +8,7 @@ namespace Observers
 	class Observer
 	{
 	protected:
-		Manager::Event_Manager* pEM;
+		Manager::EventManager* pEM;
 		Manager::Graphical_Manager* pGM;
 	public:
 		Observer();

@@ -21,7 +21,7 @@ namespace Entidades
 namespace Entidades
 {
 
-    class Enemy : public Character {
+    class Enemy : public Character{ 
     private:
 		Entidades::Player* player;
 		sf::Clock clock;

@@ -3,12 +3,12 @@
 
 #include "Control.h"
 #include "Character.h"
-#include "EventManager.h"
+#include "Event_Manager.h"
 #include <SFML/System/Vector2.hpp>
 
-namespace Entities::Characters {
+namespace Entidades{
 
-#define SPEED 0.3
+#define SPEED 0.3f
 
 	class Player : public Character {
 	private:

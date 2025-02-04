@@ -3,24 +3,28 @@
 
 #include <SFML/Window/Keyboard.hpp>
 #include <set>
+namespace Observers
+{
+    class Observer;
+}
 
-class Observer;
+namespace Observers
+{
+    class Subject {
+    public:
+        std::set<Observer*>* observers;
 
-class Subject {
-public:
-    std::set<Observer*>* observers;
+    public:
+        virtual ~Subject();
 
-public:
-    virtual ~Subject();
+        virtual void subscribe(Observer* o);
+        virtual void unsubscribe(Observer* o);
 
-    virtual void subscribe(Observer* o);
-    virtual void unsubscribe(Observer* o);
+        virtual void notifyKeyPressed(sf::Keyboard::Key key);
+        virtual void notifyKeyReleased(sf::Keyboard::Key key);
 
-    virtual void notifyKeyPressed(sf::Keyboard::Key key);
-    virtual void notifyKeyReleased(sf::Keyboard::Key key);
-
-protected:
-    Subject();
-};
-
+    protected:
+        Subject();
+    };
+}
 #endif // SUBJECT_H

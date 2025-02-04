@@ -13,9 +13,9 @@ namespace Controllers {
 	class PlayerController;
 } // namespace Controllers
 
-namespace Managers {
+namespace Manager {
 
-	class InputManager : public Subject {
+	class InputManager : public Observers::Subject {
 	private:
 		static InputManager* instance;
 		std::map<sf::Keyboard::Key, std::string> keyMap;

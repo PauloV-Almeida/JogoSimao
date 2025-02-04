@@ -2,25 +2,25 @@
 #define ENTITYLIST_H
 
 #include "list.h"
-namespace Entities {
+namespace Entidades {
     class Entity;
 }
 namespace Lists {
 
     class EntityList {
     private:
-        List<Entities::Entity> entities;
+        List<Entidades::Entity> entities;
 
     public:
         EntityList();
         ~EntityList();
 
-        void include(Entities::Entity* pE);
-        void remove(Entities::Entity* pE);
+        void include(Entidades::Entity* pE);
+        void remove(Entidades::Entity* pE);
         int getSize() const;
         void clear();
-        List<Entities::Entity>::Iterator<Entities::Entity> begin() const;
-        List<Entities::Entity>::Iterator<Entities::Entity> end() const;
+        List<Entidades::Entity>::Iterator<Entidades::Entity> begin() const;
+        List<Entidades::Entity>::Iterator<Entidades::Entity> end() const;
     };
 
 }

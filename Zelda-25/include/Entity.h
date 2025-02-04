@@ -8,7 +8,7 @@
 #include <SFML/Graphics/Texture.hpp>
 #include <SFML/System/Vector2.hpp>
 
-namespace Entities {
+namespace Entidades {
 
     const float GRAVITY_VALUE = 10.0f; // Constante global de gravidade
 
