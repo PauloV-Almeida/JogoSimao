@@ -1,48 +1,52 @@
-#include "../include/Player.h"
+#include "Player.h"
+#include "Character.h"
+#include <SFML/System/Vector2.hpp>
 
-namespace Entidades
-{
-	Player::Player(const sf::Vector2f pos,const sf::Vector2f tam) :
-		Character(pos, tam)
-	{
-		body.setPosition(pos);
-		body.setFillColor(sf::Color::Green);
-		run();
-	}
-	Player::Player()
-	{
-	}
-	Player::~Player()
-	{
+using namespace Entities::Characters;
 
-	}
-	void Player::run()
-	{
-		speed = sf::Vector2f(1.f, 1.f);
-	}
+Player::Player()
+    : Character(), pController(nullptr), canJump(true), isFirstPlayer(true) {
 
-	const sf::RectangleShape Player::getBody()
-	{
-		return body;
-	}
-	void Player::move()
-	{
-		
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))
-		{
-			body.move(0.f, -speed.y);
-		}
-		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
-		{
-			body.move(0.f, speed.y);
-		}
-		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
-		{
-			body.move(-speed.x, 0.f);
-		}
-		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
-		{
-			body.move(speed.x, 0.f);
-		}
-	}
+    pController = new Controllers::PlayerController();
 }
+
+Player::~Player() {}
+
+void Player::setFirstPlayer(bool isFirstPlayer) {
+    this->isFirstPlayer = isFirstPlayer;
+}
+
+bool Player::getFirstPlayer() const { return isFirstPlayer; }
+
+void Player::moveRight() { setVelX(SPEED); }
+
+void Player::moveLeft() { setVelX(-SPEED); }
+
+void Player::stopMoving() { setVelX(0); }
+
+void Player::jump() {
+    if (canJump) {
+        setVelY(-2 * SPEED);
+    }
+}
+
+void Player::move() {
+    sf::Vector2f newPos = getPos() + getVel() * pGM->getDeltaTime();
+    setPos(newPos);
+    pSprite->setPosition(newPos);
+}
+
+Controllers::PlayerController* Player::getController() const {
+    return pController;
+}
+
+void Player::execute() {
+
+    pController->controlPlayer();
+
+    if (!isOnGround())
+        fall();
+
+    move();
+}
+

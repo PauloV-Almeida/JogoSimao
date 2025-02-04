@@ -25,6 +25,12 @@
     <Filter Include="Arquivos de Cabeçalho\observer">
       <UniqueIdentifier>{50079556-88dc-476b-96ea-3cdfd7cc6701}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Arquivos de Cabeçalho\control">
+      <UniqueIdentifier>{56be41ec-5a54-4aa6-a82d-9824d43d35c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\lists">
+      <UniqueIdentifier>{e0891879-d3f7-4bd9-9893-d77c2439764b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Ente.cpp">
@@ -50,6 +56,12 @@
     </ClCompile>
     <ClCompile Include="src\Enemy.cpp">
       <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Control.cpp">
+      <Filter>Arquivos de Cabeçalho\control</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityList.cpp">
+      <Filter>Arquivos de Cabeçalho\lists</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -83,14 +95,20 @@
     <ClInclude Include="include\Subject.h">
       <Filter>Arquivos de Cabeçalho\observer</Filter>
     </ClInclude>
-    <ClInclude Include="include\EntityList.h">
-      <Filter>Arquivos de Cabeçalho\Entity</Filter>
-    </ClInclude>
-    <ClInclude Include="include\list.h">
-      <Filter>Arquivos de Cabeçalho</Filter>
-    </ClInclude>
     <ClInclude Include="include\Input_Manager.h">
       <Filter>Arquivos de Cabeçalho\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Control.h">
+      <Filter>Arquivos de Cabeçalho\control</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Event_Manager.h">
+      <Filter>Arquivos de Cabeçalho\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="include\EntityList.h">
+      <Filter>Arquivos de Cabeçalho\lists</Filter>
+    </ClInclude>
+    <ClInclude Include="include\list.h">
+      <Filter>Arquivos de Cabeçalho\lists</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

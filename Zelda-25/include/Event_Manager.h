@@ -1,26 +1,41 @@
-#pragma once
+#ifndef EVENT_MANAGER_H
+#define EVENT_MANAGER_H
 
 #include "Graphical_Manager.h"
+#include "Input_Manager.h"
+#include <SFML/Window/Event.hpp>
+#include <SFML/Window/Window.hpp>
 
-#include "Subject.h"
+namespace Entities::Characters {
+    class Player;
 
-namespace Observers
-{
-	class Observer;
+} // namespace Characters
+
+namespace Managers {
+
+    class EventManager {
+    private:
+        static EventManager* instance;
+
+        sf::Window* pWindow;
+        GraphicManager* pGM;
+        InputManager* pIM;
+
+    private:
+        EventManager();
+        ~EventManager();
+        EventManager(const EventManager&) = delete;
+        EventManager& operator=(const EventManager&) = delete;
+
+    public:
+        static EventManager* getInstance();
+
+        void setGM(GraphicManager* pGM);
+        void setIM(InputManager* pIM);
+        void processEvents();
+    };
+
 }
 
-namespace Manager
-{
-	class Event_Manager : public Subject
-	{
-	private:
-		Graphical_Manager* pGM;
-		//padrao singleton
-		Event_Manager();
-		static Event_Manager* instance;
-	public:
-		~Event_Manager();
-		static Event_Manager* getInstance();
-		void run();
-	};
-}
+#endif // EVENT_MANAGER_H
+
