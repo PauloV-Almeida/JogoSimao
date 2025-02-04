@@ -2,9 +2,7 @@
 
 namespace Entities {
 
-    const float GRAVITY_VALUE = 10.0f; // Definindo o valor da gravidade
-
-    Entity::Entity() : gravity(0.0f, GRAVITY_VALUE), onGround(false), buffer(nullptr), id(IDs::IDs::vazio) {
+    Entity::Entity() : onGround(false), buffer(nullptr), id(IDs::IDs::vazio) {
         pSprite = new sf::Sprite();
         pTexture = new sf::Texture();
         setTarget();
@@ -54,7 +52,7 @@ namespace Entities {
 
     void Entity::fall() {
         if (!onGround) {
-            velocity.y += gravity.y;
+            velocity.y += GRAVITY_VALUE; // Usando a constante global GRAVITY_VALUE
         }
     }
 
@@ -63,3 +61,4 @@ namespace Entities {
     }
 
 } // namespace Entities
+

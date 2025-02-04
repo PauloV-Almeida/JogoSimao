@@ -1,4 +1,5 @@
-#pragma once
+#ifndef SUBJECT_H
+#define SUBJECT_H
 
 #include <SFML/Window/Keyboard.hpp>
 #include <set>
@@ -7,17 +8,19 @@ class Observer;
 
 class Subject {
 public:
-	std::set<Observer*>* observadores;
+    std::set<Observer*>* observers;
 
 public:
-	virtual ~Subject();
+    virtual ~Subject();
 
-	virtual void inscrever(Observer* o);
-	virtual void desinscrever(Observer* o);
+    virtual void subscribe(Observer* o);
+    virtual void unsubscribe(Observer* o);
 
-	virtual void notificarTeclaPressionada(sf::Keyboard::Key tecla);
-	virtual void notificarTeclaSolta(sf::Keyboard::Key tecla);
+    virtual void notifyKeyPressed(sf::Keyboard::Key key);
+    virtual void notifyKeyReleased(sf::Keyboard::Key key);
 
 protected:
-	Subject();
+    Subject();
 };
+
+#endif // SUBJECT_H

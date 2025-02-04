@@ -1,18 +1,40 @@
-#pragma once
+#ifndef PLAYER_H
+#define PLAYER_H
+
+#include "Control.h"
 #include "Character.h"
+#include "EventManager.h"
+#include <SFML/System/Vector2.hpp>
 
-namespace Entidades {
+namespace Entities::Characters {
 
-	class Player : public Character
-	{
+#define SPEED 0.3
+
+	class Player : public Character {
 	private:
+		bool isFirstPlayer;
+
+	protected:
+		bool canJump;
+		Controllers::PlayerController* pController;
+
 	public:
-		Player(const sf::Vector2f pos,const sf::Vector2f tam);
-		Player(sf::RectangleShape body);
 		Player();
 		~Player();
-		const sf::RectangleShape getBody();
-		void run();
+
+		void setFirstPlayer(bool isFirstPlayer);
+		bool getFirstPlayer() const;
+
+		void moveRight();
+		void moveLeft();
+		void stopMoving();
+		void jump();
 		void move();
+		virtual void attack() = 0;
+		virtual void execute();
+		Controllers::PlayerController* getController() const;
 	};
-}
+
+} // namespace Entities::Characters
+
+#endif // PLAYER_H

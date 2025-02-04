@@ -1,20 +1,19 @@
-#include "../include/Character.h"
+#include "Entities/Characters/Character.h"
+#include <SFML/System/Vector2.hpp>
 
-namespace Entidades
-{
-	Character::Character(const sf::Vector2f pos,const sf::Vector2f tam) :
-		body(sf::RectangleShape(tam))
-	{
-		body.setPosition(pos);
-	}
-	Character::Character()
-	{
-	}
-	Character::~Character()
-	{
-	}
-	const sf::RectangleShape Character::getBody()
-	{
-		return body;
-	}
+using namespace Entities::Characters;
+
+Character::Character()
+    : Entity(), hp(100), numLives(3), lookingLeft(false) {}
+
+Character::~Character() {}
+
+void Character::move() {
+    sf::Vector2f newPos = getPos() + (velocity * pGM->getDeltaTime());
+    setPos(newPos);
+    pSprite->setPosition(newPos);
+}
+
+void Character::setLookingLeft(bool lookingLeft) {
+    this->lookingLeft = lookingLeft;
 }

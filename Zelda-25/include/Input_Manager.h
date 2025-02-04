@@ -1,4 +1,5 @@
-#pragma once
+#ifndef __INPUT_MANAGER_H__
+#define __INPUT_MANAGER_H__
 
 #include "Subject.h"
 #include <SFML/Window.hpp>
@@ -33,3 +34,5 @@ namespace Managers {
 	};
 
 } // namespace Managers
+
+#endif // __INPUT_MANAGER_H__

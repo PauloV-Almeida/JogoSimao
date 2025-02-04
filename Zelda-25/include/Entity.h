@@ -10,16 +10,15 @@
 
 namespace Entities {
 
-    const float gravity = 5.0f;
+    const float GRAVITY_VALUE = 10.0f; // Constante global de gravidade
 
     class Entity : public Ente {
     private:
         sf::Vector2f position;
-        const sf::Vector2f gravity;
         sf::Vector2f size;
         bool onGround;
         std::ostream* buffer;
-        IDs::IDs id; // Adding ID from IDs.h
+        IDs::IDs id; // Adicionando ID de IDs.h
 
     protected:
         sf::Vector2f velocity;
@@ -46,3 +45,4 @@ namespace Entities {
 } // namespace Entities
 
 #endif // ENTITY_H
+

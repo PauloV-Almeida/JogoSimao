@@ -1,5 +1,92 @@
-﻿  Player.cpp
+﻿  Control.cpp
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\Zelda-25\Control.h(4,10): error C1083: Não é possível abrir arquivo incluir: 'Subject.h': No such file or directory
+  EntityList.cpp
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\Zelda-25\EntityList.cpp(1,10): error C1083: Não é possível abrir arquivo incluir: 'EntityList.h': No such file or directory
+  Charecter.cpp
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\Zelda-25\src\Charecter.cpp(5,2): error C2653: 'Character': não é um nome de classe ou de namespace
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\Zelda-25\src\Charecter.cpp(5,13): error C4430: faltando especificador de tipo - int assumido. Observação: C++ não suporta default-int
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\Zelda-25\src\Charecter.cpp(7,2): error C2550: 'Entidades::Character': listas de inicializadores de construtor são permitidas apenas em definições de construtor
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\Zelda-25\src\Charecter.cpp(8,3): error C2065: 'body': identificador não declarado
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\Zelda-25\src\Charecter.cpp(9,2): warning C4508: 'Entidades::Character': função deve retornar um valor; tipo de retorno 'void' assumido
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\Zelda-25\src\Charecter.cpp(10,2): error C2653: 'Character': não é um nome de classe ou de namespace
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\Zelda-25\src\Charecter.cpp(10,13): error C4430: faltando especificador de tipo - int assumido. Observação: C++ não suporta default-int
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\Zelda-25\src\Charecter.cpp(12,2): warning C4508: 'Entidades::Character': função deve retornar um valor; tipo de retorno 'void' assumido
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\Zelda-25\src\Charecter.cpp(13,2): error C2653: 'Character': não é um nome de classe ou de namespace
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\Zelda-25\src\Charecter.cpp(13,14): error C4430: faltando especificador de tipo - int assumido. Observação: C++ não suporta default-int
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\Zelda-25\src\Charecter.cpp(15,2): warning C4508: 'Entidades::{dtor}': função deve retornar um valor; tipo de retorno 'void' assumido
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\Zelda-25\src\Charecter.cpp(16,27): error C2653: 'Character': não é um nome de classe ou de namespace
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\Zelda-25\src\Charecter.cpp(18,10): error C2065: 'body': identificador não declarado
+  Enemy.cpp
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\Zelda-25\include\Enemy.h(24,26): error C2504: 'Character': classe base indefinida
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\Zelda-25\include\Player.h(6,10): error C1083: Não é possível abrir arquivo incluir: 'EventManager.h': No such file or directory
+  Player.cpp
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(81,19): error C2589: '(': token inválido no lado direito de '::'
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(81,19): error C2760: erro de sintaxe: ')' não era esperado aqui; o esperado era ';'
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(81,19): error C3878: erro de sintaxe: token inesperado ")" após "expression_statement"
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(81,19): message : recuperação de erro ignorada: ' ) '
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(82,19): error C2589: '(': token inválido no lado direito de '::'
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(82,19): error C2760: erro de sintaxe: ')' não era esperado aqui; o esperado era ';'
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(82,19): error C3878: erro de sintaxe: token inesperado ")" após "expression_statement"
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(82,19): message : recuperação de erro ignorada: ' ) '
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(83,19): error C2589: '(': token inválido no lado direito de '::'
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(83,19): error C2760: erro de sintaxe: ')' não era esperado aqui; o esperado era ';'
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(83,19): error C3878: erro de sintaxe: token inesperado ")" após "expression_statement"
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(83,19): message : recuperação de erro ignorada: ' ) '
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(84,19): error C2589: '(': token inválido no lado direito de '::'
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(84,19): error C2760: erro de sintaxe: ')' não era esperado aqui; o esperado era ';'
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(84,19): error C3878: erro de sintaxe: token inesperado ")" após "expression_statement"
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(84,19): message : recuperação de erro ignorada: ' ) '
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(114,21): error C2589: '(': token inválido no lado direito de '::'
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(114,21): error C2760: erro de sintaxe: ')' não era esperado aqui; o esperado era ';'
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(114,21): error C3878: erro de sintaxe: token inesperado ")" após "expression_statement"
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(114,21): message : recuperação de erro ignorada: ' ) '
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(115,21): error C2589: '(': token inválido no lado direito de '::'
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(115,21): error C2760: erro de sintaxe: ')' não era esperado aqui; o esperado era ';'
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(115,21): error C3878: erro de sintaxe: token inesperado ")" após "expression_statement"
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(115,21): message : recuperação de erro ignorada: ' ) '
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(116,21): error C2589: '(': token inválido no lado direito de '::'
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(116,21): error C2760: erro de sintaxe: ')' não era esperado aqui; o esperado era ';'
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(116,21): error C3878: erro de sintaxe: token inesperado ")" após "expression_statement"
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(116,21): message : recuperação de erro ignorada: ' ) '
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(117,21): error C2589: '(': token inválido no lado direito de '::'
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(117,21): error C2760: erro de sintaxe: ')' não era esperado aqui; o esperado era ';'
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(117,21): error C3878: erro de sintaxe: token inesperado ")" após "expression_statement"
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(117,21): message : recuperação de erro ignorada: ' ) '
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(120,21): error C2589: '(': token inválido no lado direito de '::'
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(120,21): error C2760: erro de sintaxe: ')' não era esperado aqui; o esperado era ';'
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(120,21): error C3878: erro de sintaxe: token inesperado ")" após "expression_statement"
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(120,21): message : recuperação de erro ignorada: ' ) '
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(121,21): error C2589: '(': token inválido no lado direito de '::'
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(121,21): error C2760: erro de sintaxe: ')' não era esperado aqui; o esperado era ';'
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(121,21): error C3878: erro de sintaxe: token inesperado ")" após "expression_statement"
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(121,21): message : recuperação de erro ignorada: ' ) '
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(122,21): error C2589: '(': token inválido no lado direito de '::'
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(122,21): error C2760: erro de sintaxe: ')' não era esperado aqui; o esperado era ';'
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(122,21): error C3878: erro de sintaxe: token inesperado ")" após "expression_statement"
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(122,21): message : recuperação de erro ignorada: ' ) '
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(123,21): error C2589: '(': token inválido no lado direito de '::'
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(123,21): error C2760: erro de sintaxe: ')' não era esperado aqui; o esperado era ';'
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(123,21): error C3878: erro de sintaxe: token inesperado ")" após "expression_statement"
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(123,21): message : recuperação de erro ignorada: ' ) '
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(126,26): error C2589: '(': token inválido no lado direito de '::'
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(126,26): error C2760: erro de sintaxe: ')' não era esperado aqui; o esperado era ';'
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(126,26): error C3878: erro de sintaxe: token inesperado ")" após "expression_statement"
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(126,26): message : recuperação de erro ignorada: ' ) '
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(127,26): error C2589: '(': token inválido no lado direito de '::'
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(127,26): error C2760: erro de sintaxe: ')' não era esperado aqui; o esperado era ';'
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(127,26): error C3878: erro de sintaxe: token inesperado ")" após "expression_statement"
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(127,26): message : recuperação de erro ignorada: ' ) '
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(128,26): error C2589: '(': token inválido no lado direito de '::'
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(128,26): error C2760: erro de sintaxe: ')' não era esperado aqui; o esperado era ';'
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(128,26): error C3878: erro de sintaxe: token inesperado ")" após "expression_statement"
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(128,26): message : recuperação de erro ignorada: ' ) '
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(129,26): error C2589: '(': token inválido no lado direito de '::'
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(129,26): error C2760: erro de sintaxe: ')' não era esperado aqui; o esperado era ';'
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(129,26): error C3878: erro de sintaxe: token inesperado ")" após "expression_statement"
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\SFML-2.6.2\include\SFML\Graphics\Rect.inl(129,26): message : recuperação de erro ignorada: ' ) '
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\Zelda-25\include\Player.h(6,10): error C1083: Não é possível abrir arquivo incluir: 'EventManager.h': No such file or directory
   Principal.cpp
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\Zelda-25\include\Player.h(6,10): error C1083: Não é possível abrir arquivo incluir: 'EventManager.h': No such file or directory
   Zelda.cpp
+C:\Users\jvcab\OneDrive\Documentos\GitHub\JogoSimao\Zelda-25\include\Player.h(6,10): error C1083: Não é possível abrir arquivo incluir: 'EventManager.h': No such file or directory
   Gerando Código...
-  Zelda-25.vcxproj -> C:\Users\Paulo Victor\Documents\github\JogoSimao\Zelda-25\Debug\Zelda-25.exe
