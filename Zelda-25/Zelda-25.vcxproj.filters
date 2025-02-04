@@ -25,6 +25,12 @@
     <Filter Include="Arquivos de Cabeçalho\observer">
       <UniqueIdentifier>{50079556-88dc-476b-96ea-3cdfd7cc6701}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Arquivos de Cabeçalho\Fases">
+      <UniqueIdentifier>{35382e94-5980-4d8b-8fb3-262511b07663}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\List">
+      <UniqueIdentifier>{bec5bdcb-f146-46d0-9544-fe0868cb3f7f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Ente.cpp">
@@ -53,9 +59,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\Ente.h">
-      <Filter>Arquivos de Cabeçalho</Filter>
-    </ClInclude>
     <ClInclude Include="include\Principal.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
@@ -83,14 +86,20 @@
     <ClInclude Include="include\Subject.h">
       <Filter>Arquivos de Cabeçalho\observer</Filter>
     </ClInclude>
-    <ClInclude Include="include\EntityList.h">
-      <Filter>Arquivos de Cabeçalho\Entity</Filter>
-    </ClInclude>
-    <ClInclude Include="include\list.h">
-      <Filter>Arquivos de Cabeçalho</Filter>
-    </ClInclude>
     <ClInclude Include="include\Input_Manager.h">
       <Filter>Arquivos de Cabeçalho\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Fase.h">
+      <Filter>Arquivos de Cabeçalho\Fases</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Ente.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="include\list.h">
+      <Filter>Arquivos de Cabeçalho\List</Filter>
+    </ClInclude>
+    <ClInclude Include="include\EntityList.h">
+      <Filter>Arquivos de Cabeçalho\List</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

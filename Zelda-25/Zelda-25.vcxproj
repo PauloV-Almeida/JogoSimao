@@ -29,6 +29,7 @@
     <ClCompile Include="Zelda.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Fase.h" />
     <ClInclude Include="include\Character.h" />
     <ClInclude Include="include\Enemy.h" />
     <ClInclude Include="include\Ente.h" />

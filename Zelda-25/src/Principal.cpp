@@ -5,14 +5,16 @@ Principal::Principal() :
 	character() 
 {
 	Entidades::Player* player = new Entidades::Player(sf::Vector2f(100.f, 100.f), sf::Vector2f(50.f, 50.f));
-	Entidades::Enemy* enemy = new Entidades::Enemy(sf::Vector2f(100.f, 200.f), sf::Vector2f(50.f, 50.f), player);
+	Entidades::Enemy* enemy1 = new Entidades::Enemy(sf::Vector2f(100.f, 200.f), sf::Vector2f(50.f, 50.f), player);
 
 	Entidades::Character* p1 = static_cast<Entidades::Character*>(player);
-	Entidades::Character* p2 = static_cast<Entidades::Character*>(enemy);
+	Entidades::Character* p2 = static_cast<Entidades::Character*>(enemy1);
+	
 
 	character.push_back(p1);
 	character.push_back(p2);
-
+	
+	
     run();
 }
 

@@ -18,7 +18,7 @@ namespace Entidades
 	}
 	void Player::run()
 	{
-		speed = sf::Vector2f(1.f, 1.f);
+		speed = sf::Vector2f(0.05f, 0.05f);
 	}
 
 	const sf::RectangleShape Player::getBody()
